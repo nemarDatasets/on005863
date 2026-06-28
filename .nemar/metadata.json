@@ -1,36 +1,111 @@
 {
   "version": "2.0",
-  "dataset_id": "on005863",
-  "source": "openneuro",
-  "source_id": "ds005863",
+  "pipeline_stage": "enriched",
   "title": "Cognitive Electrophysiology in Socioeconomic Context in Adulthood",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
-    "Elif Isbell": {},
+    "Elif Isbell": {
+      "orcid": "0000-0002-4928-2438"
+    },
     "Amanda N. Peters": {},
     "Dylan M. Richardson": {},
     "Nancy E. R. De León": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds005863.v2.0.0",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on005863",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on005863",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1371/journal.pone.0307406",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1016/j.neuroimage.2020.117465",
+      "identifier_type": "DOI",
+      "relation_type": "References"
     }
-  ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.9.0",
-  "recording_modality": [
-    "eeg"
-  ],
-  "datatypes": [
-    "eeg"
   ],
   "funding_references": [
     {
       "funder_name": "research start-up funds awarded to Elif Isbell by University of California Merced."
+    },
+    {
+      "funder_name": "University of California Merced",
+      "award_title": "research start-up funds"
     }
   ],
-  "acknowledgements": "We thank Isbell Development, Experiences, and Achievement (IDEA) lab research assistants for their contributions to data collection, and the adults who participated in the study."
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "eeg"
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".eeg",
+    ".json",
+    ".md",
+    ".tsv",
+    ".vhdr",
+    ".vmrk"
+  ],
+  "description": "This dataset comprises electroencephalogram (EEG) recordings from 127 young adults (18-30 years) collected during cognitive tasks designed to assess neural activity in perception, cognition, and action. Participants completed standardized tasks from the ERP CORE battery, with concurrent collection of retrospective and current socioeconomic status indicators, including childhood family SES, educational attainment, income, food security, and neighborhood characteristics. The dataset also includes ADHD symptom screening data, enabling investigation of relationships between socioeconomic context, neural electrophysiology, and neurodevelopmental symptoms in a diverse young adult sample.",
+  "methods_description": "EEG data were recorded from 127 young adults (18-30 years) during cognitive tasks directly acquired from or adapted from the Event-Related Potentials Compendium of Open Resources and Experiments (ERP CORE). Tasks were optimized to capture neural activity in perception, cognition, and action. Participants completed each EEG task once. Retrospective and current socioeconomic status indicators were collected, including childhood family SES, educational attainment, individual and household income, food security, and home and neighborhood characteristics. An ADHD symptoms checklist was administered.",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "event-related potentials"
+    },
+    {
+      "term": "ERP CORE"
+    },
+    {
+      "term": "socioeconomic status"
+    },
+    {
+      "term": "childhood SES"
+    },
+    {
+      "term": "cognitive electrophysiology"
+    },
+    {
+      "term": "ADHD symptoms"
+    },
+    {
+      "term": "young adults"
+    },
+    {
+      "term": "food security"
+    },
+    {
+      "term": "neural electrophysiology"
+    },
+    {
+      "term": "socioeconomic disparities"
+    },
+    {
+      "term": "health equity"
+    },
+    {
+      "term": "neurodevelopment"
+    }
+  ],
+  "source_hash": "9d9b101afeed71fcdaa95240ecc9c65768d1cefcd2c64caa23dd2af002d0cbf2"
 }
