@@ -1,7 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "Cognitive Electrophysiology in Socioeconomic Context in Adulthood",
+  "description": "This dataset comprises electroencephalogram (EEG) recordings from 127 young adults (18-30 years) collected during standardized cognitive tasks designed to assess perception, cognition, and action. Participants completed ERP CORE tasks or adaptations thereof, with concurrent collection of retrospective and current socioeconomic status indicators, including childhood family SES, educational attainment, income, food security, and neighborhood characteristics. The dataset also includes ADHD symptom screening data, enabling investigation of relationships between socioeconomic context, neural electrophysiology, and neurodevelopmental symptomatology in a socioeconomically diverse sample.",
+  "methods_description": "EEG data were recorded from 127 young adults (18-30 years) during cognitive tasks directly acquired from or adapted from the Event-Related Potentials Compendium of Open Resources and Experiments (ERP CORE). Tasks were optimized to capture neural activity related to perception, cognition, and action. Each participant completed each EEG task once. Identifiable information including date of birth, race/ethnicity, zip code, and language information were removed prior to public release; age in years was computed and retained.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -12,12 +14,27 @@
     "Dylan M. Richardson": {},
     "Nancy E. R. De León": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds005863.v2.0.0",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "EEG"
     },
+    {
+      "term": "event-related potentials"
+    },
+    {
+      "term": "socioeconomic status"
+    },
+    {
+      "term": "cognitive neuroscience"
+    },
+    {
+      "term": "ADHD symptoms"
+    },
+    {
+      "term": "young adults"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on005863",
       "identifier_type": "URL",
@@ -37,6 +54,11 @@
       "identifier": "10.1016/j.neuroimage.2020.117465",
       "identifier_type": "DOI",
       "relation_type": "References"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds005863.v2.0.0",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
@@ -49,12 +71,12 @@
     }
   ],
   "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "11.4 GB (1072 files)"
   ],
   "formats": [
     ".eeg",
@@ -62,50 +84,8 @@
     ".md",
     ".tsv",
     ".vhdr",
-    ".vmrk"
+    ".vmrk",
+    ".yml"
   ],
-  "description": "This dataset comprises electroencephalogram (EEG) recordings from 127 young adults (18-30 years) collected during cognitive tasks designed to assess neural activity in perception, cognition, and action. Participants completed standardized tasks from the ERP CORE battery, with concurrent collection of retrospective and current socioeconomic status indicators, including childhood family SES, educational attainment, income, food security, and neighborhood characteristics. The dataset also includes ADHD symptom screening data, enabling investigation of relationships between socioeconomic context, neural electrophysiology, and neurodevelopmental symptoms in a diverse young adult sample.",
-  "methods_description": "EEG data were recorded from 127 young adults (18-30 years) during cognitive tasks directly acquired from or adapted from the Event-Related Potentials Compendium of Open Resources and Experiments (ERP CORE). Tasks were optimized to capture neural activity in perception, cognition, and action. Participants completed each EEG task once. Retrospective and current socioeconomic status indicators were collected, including childhood family SES, educational attainment, individual and household income, food security, and home and neighborhood characteristics. An ADHD symptoms checklist was administered.",
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "event-related potentials"
-    },
-    {
-      "term": "ERP CORE"
-    },
-    {
-      "term": "socioeconomic status"
-    },
-    {
-      "term": "childhood SES"
-    },
-    {
-      "term": "cognitive electrophysiology"
-    },
-    {
-      "term": "ADHD symptoms"
-    },
-    {
-      "term": "young adults"
-    },
-    {
-      "term": "food security"
-    },
-    {
-      "term": "neural electrophysiology"
-    },
-    {
-      "term": "socioeconomic disparities"
-    },
-    {
-      "term": "health equity"
-    },
-    {
-      "term": "neurodevelopment"
-    }
-  ],
-  "source_hash": "9d9b101afeed71fcdaa95240ecc9c65768d1cefcd2c64caa23dd2af002d0cbf2"
+  "source_hash": "fa1d3c80aa58c4376608299c6b85192b96f6e8483b2deded0baa823eaac6a86e"
 }
