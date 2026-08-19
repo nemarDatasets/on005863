@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "validated",
+  "pipeline_stage": "enriched",
   "title": "Cognitive Electrophysiology in Socioeconomic Context in Adulthood",
-  "description": "This dataset comprises electroencephalogram (EEG) recordings from 127 young adults (18-30 years) collected during standardized cognitive tasks designed to assess perception, cognition, and action. Participants completed tasks from the Event-Related Potentials Compendium of Open Resources and Experiments (ERP CORE) or adapted variants thereof. The dataset integrates neurophysiological measures with comprehensive socioeconomic indicators spanning childhood and adulthood, including family SES, educational attainment, income, food security, and neighborhood characteristics, as well as ADHD symptom screening. This resource enables investigation of the relationship between socioeconomic context and neural electrophysiology in a diverse young adult population.",
-  "methods_description": "EEG data were collected from 127 young adults (18-30 years) during cognitive tasks directly acquired from or adapted from the ERP CORE protocol. Tasks were optimized to capture neural activity related to perception, cognition, and action. Participants completed each EEG task once. Retrospective and current socioeconomic indicators were assessed, including childhood family SES, educational attainment, individual and household income, food security, and home and neighborhood characteristics. An ADHD symptoms checklist was also administered.",
+  "description": "This dataset contains EEG recordings from 127 young adults (18-30 years) collected alongside measures of childhood and adulthood socioeconomic status (SES), including educational attainment, income, food security, and neighborhood characteristics. EEG tasks were drawn from or adapted from the ERP CORE resource, designed to elicit neural activity related to perception, cognition, and action. The dataset also includes an ADHD symptoms checklist, enabling investigation of relationships between SES, ADHD symptoms, and neural activity in a socioeconomically diverse adult sample.",
+  "methods_description": "EEG data were recorded using tasks directly acquired from or adapted from the ERP CORE battery, designed to capture neural correlates of perception, cognition, and action. Identifiable information (date of birth, race/ethnicity, zip code, languages spoken) was removed prior to sharing, and participant IDs and raw EEG files were renamed for BIDS compatibility.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -22,16 +22,30 @@
       "term": "event-related potentials"
     },
     {
-      "term": "socioeconomic status"
+      "term": "Low Socioeconomic Status",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D000092886"
     },
     {
-      "term": "cognitive neuroscience"
+      "term": "attention-deficit/hyperactivity disorder"
     },
     {
-      "term": "ADHD symptoms"
+      "term": "Cognition",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D003071"
     },
     {
-      "term": "young adults"
+      "term": "adulthood"
+    },
+    {
+      "term": "ERP CORE"
+    },
+    {
+      "term": "income"
+    },
+    {
+      "term": "food security"
     }
   ],
   "related_identifiers": [
@@ -46,16 +60,6 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "10.1371/journal.pone.0307406",
-      "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "10.1016/j.neuroimage.2020.117465",
-      "identifier_type": "DOI",
-      "relation_type": "References"
-    },
-    {
       "identifier": "10.18112/openneuro.ds005863.v2.0.0",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
@@ -67,7 +71,7 @@
     },
     {
       "funder_name": "University of California Merced",
-      "award_title": "research start-up funds"
+      "award_title": "research start-up funds awarded to Elif Isbell"
     }
   ],
   "resource_type_general": "Dataset",
